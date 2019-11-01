@@ -11,8 +11,8 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-    private final String CHANNEL_ID = "personal_notifications";
-    private final int NOTIFICATION_ID = 001;
+    public final String CHANNEL_ID = "personal_notifications";
+    public static final int NOTIFICATION_ID = 001;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
