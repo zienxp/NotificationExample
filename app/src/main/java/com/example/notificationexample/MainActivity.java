@@ -13,6 +13,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
     public final String CHANNEL_ID = "personal_notifications";
     public static final int NOTIFICATION_ID = 001;
+    public static final String TEXT_REPLY = "text_reply";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private void createNotificationChannel(){
         if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.O){
             CharSequence name = "Personal Notification";
-            String description = "include all the personal notificqtion";
+            String description = "include all the personal notification";
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
 
             NotificationChannel notificationChannel = new NotificationChannel(CHANNEL_ID,name,importance);
